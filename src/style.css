@@ -77,6 +77,11 @@ p {
 
 @media (max-width: 768px) {
   .weather {
+    margin-top: 35px;
+  }
+
+  .wtr-abt {
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
