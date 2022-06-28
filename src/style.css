@@ -1,7 +1,16 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #bd8c7d;
+  --secondary-color: #d1bfa7;
+
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+  background: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  ) !important;
 }
 
 h1,
@@ -11,12 +20,12 @@ h3 {
 }
 
 h1 {
-  font-size: 96px !important;
+  font-size: 80px !important;
 }
 
 h2 {
   font-size: 48px !important;
-  margin-top: 40px !important;
+  margin-top: 20px !important;
 }
 
 h3 {
@@ -29,7 +38,7 @@ p {
 .links {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .contact-link,
@@ -42,8 +51,7 @@ p {
 
 .contact-link,
 .champagne-link,
-.weather-link,
-.yogurt-link {
+.weather-link {
   color: white;
   background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -55,11 +63,18 @@ p {
 }
 
 .champagne,
-.weather,
-.yogurt {
+.weather {
   background: var(--secondary-color);
 }
+.ana {
+  display: block;
+  margin: 0 auto;
+}
 
+.git-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 #contact {
   text-align: center;
   margin-bottom: 70px;
@@ -75,13 +90,9 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .weather {
-    margin-top: 35px;
-  }
-
-  .wtr-abt {
-    margin-top: 25px;
-    margin-bottom: 25px;
+@media (max-width: 767px) {
+  .weather,
+  .champagne {
+    display: none;
   }
 }
