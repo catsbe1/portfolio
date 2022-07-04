@@ -5,7 +5,6 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
-  width: 100%;
   background: linear-gradient(
     to top,
     #dad4ec 0%,
@@ -165,6 +164,9 @@ svg {
 
 .animation {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
