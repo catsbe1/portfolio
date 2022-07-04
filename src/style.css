@@ -4,6 +4,7 @@
 
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+html,
 body {
   background: linear-gradient(
     to top,
@@ -11,7 +12,8 @@ body {
     #dad4ec 1%,
     #f3e7e9 100%
   ) !important;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
