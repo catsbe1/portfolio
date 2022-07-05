@@ -168,3 +168,14 @@ svg {
 ul {
   list-style-type: none;
 }
+
+.social-media {
+  line-height: 3;
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.social-media a {
+  color: black;
+}
