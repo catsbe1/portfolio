@@ -165,10 +165,6 @@ svg {
   }
 }
 
-ul {
-  list-style-type: none;
-}
-
 .social-media {
   line-height: 3;
   font-size: 30px;
@@ -178,4 +174,22 @@ ul {
 
 .social-media a {
   color: black;
+}
+
+.skill {
+  border: 3px solid white;
+  padding: 20px 5px 20px 5px !important;
+  color: white;
+  background-color: var(--primary-color);
+  opacity: 0.4;
+}
+
+.skill:hover {
+  opacity: 1;
+}
+
+.container .skills {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
