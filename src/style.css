@@ -80,6 +80,7 @@ p {
 }
 .navbar-bg {
   background: #f1e5e9 !important;
+  opacity: 2;
 }
 
 #contact {
