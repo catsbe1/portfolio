@@ -45,19 +45,30 @@ p {
 }
 
 .contact-link,
-.about-link {
+.about-link,
+.learn-more {
   margin: 20px;
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
 }
 
+.learn-more {
+  margin-left: 0;
+}
+
 .contact-link,
-.champagne-link,
-.weather-link {
+.learn-more {
   color: white;
   background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
+}
+
+.about-link:hover,
+.contact-link:hover,
+.learn-more:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .about-link {
@@ -65,10 +76,6 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-.champagne,
-.weather {
-  background: var(--secondary-color);
-}
 .ana {
   display: block;
   margin: 0 auto;
@@ -95,12 +102,16 @@ p {
 }
 
 #contact a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+#work {
+  font-size: 50px !important;
+  font-weight: bold;
+  margin-bottom: 80px !important;
 }
 
 @media (max-width: 767px) {
-  .weather,
-  .champagne {
+  .project-img {
     display: none;
   }
 }
@@ -176,10 +187,14 @@ svg {
 .social-media a {
   color: black;
 }
+.social-media a:hover {
+  color: black;
+  text-decoration: none;
+}
 
 .skill {
   border: 3px solid white;
-  padding: 20px 5px 20px 5px !important;
+  padding: 25px 5px 20px 5px !important;
   color: white;
   background-color: var(--primary-color);
   opacity: 0.4;
