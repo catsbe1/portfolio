@@ -191,7 +191,12 @@ svg {
   color: black;
   text-decoration: none;
 }
-
+.contact-option {
+  background: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
 .skill {
   border: 3px solid white;
   padding: 25px 5px 20px 5px !important;
