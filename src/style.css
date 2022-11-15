@@ -38,6 +38,21 @@ h3 {
 p {
   font-size: 18px;
 }
+
+.projects {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-img {
+  transition: transform 0.2s;
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+}
+
 .links {
   display: flex;
   justify-content: center;
@@ -105,6 +120,7 @@ p {
   text-decoration: none;
 }
 #work {
+  margin-top: 50px !important;
   font-size: 50px !important;
   font-weight: bold;
   margin-bottom: 80px !important;
@@ -113,67 +129,6 @@ p {
 @media (max-width: 767px) {
   .project-img {
     display: none;
-  }
-}
-
-svg {
-  width: 256px;
-  height: 256px;
-}
-
-/* SMOKE */
-#smoke-1 {
-  stroke-dasharray: 0, 10;
-  animation: smoke 6s ease infinite;
-}
-
-#smoke-2 {
-  stroke-dasharray: 0, 10;
-  animation: smoke 6s 0.5s ease infinite;
-}
-
-@keyframes smoke {
-  0% {
-    stroke-dasharray: 0, 10;
-  }
-  50% {
-    stroke-dasharray: 10, 0;
-  }
-  100% {
-    stroke-dasharray: 10, 0;
-    opacity: 0;
-  }
-}
-
-/* WRITING */
-#line-1 {
-  opacity: 0;
-  animation: writing 0.5s linear forwards;
-}
-
-#line-2 {
-  opacity: 0;
-  animation: writing 0.5s 1s linear forwards;
-}
-
-#line-3 {
-  opacity: 0;
-  animation: writing 0.5s 1.5s linear forwards;
-}
-
-#line-4 {
-  opacity: 0;
-  animation: writing 0.5s 2s linear forwards;
-}
-
-@keyframes writing {
-  0% {
-    width: 0px;
-    opacity: 1;
-  }
-  100% {
-    width: 14px;
-    opacity: 1;
   }
 }
 
@@ -197,20 +152,61 @@ svg {
   display: block;
   margin: 10px auto;
 }
-.skill {
-  border: 3px solid white;
-  padding: 25px 5px 20px 5px !important;
-  color: white;
-  background-color: var(--primary-color);
-  opacity: 0.4;
-}
 
-.skill:hover {
-  opacity: 1;
-}
-
-.container .skills {
-  display: block;
-  margin: 0 auto;
+/* DEMO-SPECIFIC STYLES */
+.typer h1 {
   width: 50%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.float-area {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-img {
+  font-size: 50px;
+  transform: translateY(-10%);
+  animation: floater 1.5s infinite;
+  transition: ease 0.5s;
+}
+
+@keyframes floater {
+  0% {
+    transform: translateY(-10%);
+    transition: ease 0.5s;
+  }
+  50% {
+    transform: translateY(10%);
+    transition: ease 0.5s;
+  }
 }
